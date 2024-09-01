@@ -29,7 +29,8 @@ X_RESULT MessengerApp::DispatchMessageSync(uint32_t message,
     case 0x00200002: {
       // Used on start in blades dashboard v5759 (marketplace update) and
       // possibly to 6717 with netplay
-      XELOGD("MessengerUnk200002, unimplemented");
+      XELOGD("MessengerUnk200002({:08X}, {:08X}), unimplemented", buffer_ptr,
+             buffer_length);
       return X_E_FAIL;
     }
   }
