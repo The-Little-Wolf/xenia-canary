@@ -505,7 +505,6 @@ Emulator::FileSignatureType Emulator::GetFileSignature(
     return FileSignatureType::XISO;
   }
 
-
   XELOGE("{}: {} ({:08X})", __func__, path.extension(), magic_value);
   return FileSignatureType::Unknown;
 }
